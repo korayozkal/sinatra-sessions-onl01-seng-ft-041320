@@ -33,7 +33,6 @@ class App < Sinatra::Base
 
   get '/second_exercise' do
     
-    @session = 
     "Your second lesson will be to set your session :id key to a value.\nIn the route: /set_session, write a line of code that sets the session[:id] equal to 1.\nThen, navigate to the '/set_session' path"
   end
 
@@ -49,7 +48,7 @@ class App < Sinatra::Base
   end
 
   get '/fetch_session_id' do
-    "You did it! session[:id] value: #{session[:id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
+     session[:id] value: #{session[:id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
   end
 
   get '/logout' do
